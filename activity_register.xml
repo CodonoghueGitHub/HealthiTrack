@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56AEF4"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    app:autoSizeTextType="uniform">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#4DD0E1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/WelcomeToRegisterLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/HeadingForReg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#040303"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/Metric_Imperial_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/PasswordBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/RepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/repeat_password"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/usrHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:hint="@string/usrHeight"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+
+
+            <EditText
+                android:id="@+id/usrWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/weight"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/usrTargetW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/target_weight"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/usrTargetC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/target_calorie_intake"
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#070303"
+                android:textColorHint="#514F4F"
+                app:autoSizeTextType="uniform" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            app:autoSizeTextType="uniform"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:id="@+id/Register"
+            style="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="25dp"
+            android:background="#051F33"
+            android:text="@string/register_now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F3EFEF"
+            android:textStyle="" />
+    </LinearLayout>
+
+</LinearLayout>
